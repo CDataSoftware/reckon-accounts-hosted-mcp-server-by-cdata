@@ -1,9 +1,9 @@
 # reckon-accounts-hosted-mcp-server-by-cdata
 CData's Model Context Protocol (MCP) Server for Reckon Accounts Hosted
 
-:heavy_exclamation_mark: This project builds a read-only MCP server. For full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Reckon Accounts Hosted (beta)](https://www.cdata.com/download/download.aspx?sku=KHZM-V&type=beta). 
+:heavy_exclamation_mark: This project builds a local, read-only MCP server. For fully remote MCP access, check out the first managed MCP platform: [CData Connect AI](https://www.cdata.com/ai/). For locally hosted, full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Reckon Accounts Hosted](https://www.cdata.com/drivers/reckonaccountshosted/download/mcp/).
 ## Purpose
-We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Reckon Accounts Hosted supported by the [CData JDBC Driver for Reckon Accounts Hosted](https://www.cdata.com/drivers/reckonaccountshosted/jdbc).
+We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Reckon Accounts Hosted supported by the [CData JDBC Driver for Reckon Accounts Hosted](https://www.cdata.com/drivers/reckonaccountshosted/jdbc/).
 
 CData JDBC Driver connects to Reckon Accounts Hosted by exposing them as relational SQL models.
 
@@ -20,7 +20,7 @@ This server wraps that driver and makes Reckon Accounts Hosted data available th
       mvn clean install
       ``` 
       This creates the JAR file: CDataMCP-jar-with-dependencies.jar
-2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/reckonaccountshosted/download/jdbc](https://www.cdata.com/drivers/reckonaccountshosted/download/jdbc)
+2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/reckonaccountshosted/download/jdbc](https://www.cdata.com/drivers/reckonaccountshosted/download/jdbc/)
 3. License the CData JDBC Driver:
     * Navigate to the `lib` folder in the installation directory, typically:
         * (Windows) `C:\Program Files\CData\CData JDBC Driver for Reckon Accounts Hosted\`
